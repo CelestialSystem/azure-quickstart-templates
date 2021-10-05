@@ -227,6 +227,8 @@
                         },
                         "constraints": {
                             "required": true,
+                            "minLength": 12,
+                            "maxLength": 128,
                             "regex": "^((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*]).{12,255})$",
                             "validationMessage": "Password length should be 12-255 characters long, and have at least one number, one lower case, one upper case and one special character"
                         }
@@ -255,6 +257,8 @@
                         },
                         "constraints": {
                             "required": true,
+                            "minLength": 12,
+                            "maxLength": 128,
                             "regex": "^((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*]).{12,255})$",
                             "validationMessage": "Password length should be 12-255 characters long, and have at least one number, one lower case, one upper case and one special character"
                         }
@@ -314,6 +318,7 @@
         "outputs": {
             "location": "[location()]",
             "stackName": "[basics('stackName')]",
+            "stackType": "[basics('stackType')]",
             "lansaVersion": "[basics('lansaVersion')]",
             "msiURL": "[coalesce(basics('msiURLV14'), basics('msiURLV15'))]",
             "osName": "[basics('osName')]",
