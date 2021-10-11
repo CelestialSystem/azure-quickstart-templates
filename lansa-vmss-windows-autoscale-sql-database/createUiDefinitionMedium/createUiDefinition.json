@@ -315,6 +315,7 @@
         "outputs": {
             "location": "[location()]",
             "stackName": "[basics('stackName')]",
+            "stackType": "[basics('stackType')]",
             "lansaVersion": "[basics('lansaVersion')]",
             "msiURL": "[coalesce(basics('msiURLV14'), basics('msiURLV15'))]",
             "osName": "[basics('osName')]",
